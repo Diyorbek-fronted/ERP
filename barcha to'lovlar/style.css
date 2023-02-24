@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  font-size: 16px;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.d-flex{
+  display: flex;
+}
+.a-i-center{
+  align-items: center;
+}
+.a-i-start{
+  align-items: flex-start;
+}
+.j-c-center{
+  justify-content: center;
+}
+.j-c-beetwen{
+  justify-content: space-between;
+}
+.f-d-column{
+  flex-direction: column;
+}
+.f-wrap{
+  flex-wrap: wrap;
+}
+.mt-20{
+  margin-top: 20px;
+}
+
+/* Start header */
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  width: 100%;
+  height: 70px;
+}
+.header .brand-logo{
+  width: 250px;
+  height: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.brand-logo__link{
+  font-size: 24px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.6);
+ 
+}
+.header .header-menu{
+  width: calc(100% - 250px);
+  height: 100%;
+  padding: 0 20px;
+  background-color: #2962FF;
+}
+.burger-btn i{
+  font-size: 24px;
+  color: #ffffff;
+}
+.header-title h3{
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+.notifation{
+  position: relative;
+}
+.notifation i{
+  color: #fff;
+}
+.notification-number{
+  position: absolute;
+  top: 5px;
+  left: 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: red;
+}
+.user{
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #ffffff;
+} 
+.user img{
+  width: 100%;
+  border-radius: 50%;
+}
+/* End header */
+
+/* Start sidebar */
+.sidebar{
+  position: fixed;
+  top: 70px;
+  left: 0;
+  z-index: 10;
+  width: 250px;
+  height: calc(100vh - 70px);
+  overflow-y: auto;
+}
+.sidebar .menu-list .menu-item,
+.menu-item .drop-list .drop-item{
+  width: 100%;
+  padding: 0;
+  margin-top: 15px;
+}
+.menu-item .drop-list .drop-item{
+  padding: 0;
+}
+.drop-list {
+  padding-left: 20px;
+}
+.icon{
+  font-size: 18px;
+  margin-right: 20px;
+}
+.menu-item__link,
+.drop-item__link{
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.8);
+  display: block;
+  padding: 0 15px;
+}
+.dropdoun-btn{
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  text-align: left;
+  margin: 0;
+  padding: 0 15px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+  position: relative;
+  cursor: pointer;
+}
+.drop-list{
+  display: none;
+}
+.dropdoun-btn.show + .drop-list{
+  display: block;
+  transition: all 0.5s;
+}
+.arrow{
+  position: absolute;
+  top: 2px;
+  right: 25px;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.8);
+  transition: 0.5s;
+}
+.dropdoun-btn.show .arrow{
+  transform: rotate(90deg);
+}
+/* End sidebar */
+
+/* Start home */
+.home{
+  position: absolute;
+  top: 70px;
+  right: 0;
+  width: calc(100% - 250px);
+  min-height: calc(100vh - 70px);
+  overflow-y: auto;
+  background-color: #F1F2F7;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+.money-report{
+  width: 100%;
+  min-height: 300px;
+  background-color: #ffffff;
+  padding: 10px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+}
+.money-report_titile{
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+.money-report_titile h4{
+  font-size: 18px;
+  font-weight: 500;
+  color: #455A64;
+}
+.inp-filter{
+  width: 150px;
+  height: 35px;
+  margin-right: 20px;
+  font-size: 15px;
+  color: #455A64;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+.filter-btn{
+  width: 100px;
+  padding: 7px 0;
+  border: 1px solid #2962FF;
+  background-color: #2962FF;
+  color: #ffffff;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.money-report .money-report-box{
+  width: 100%;
+  height: 100%;
+}
+.money-report_subtitle{
+  width: 400px;
+  height: 100%;
+}
+.report-box{
+  width: 160px;
+  height: 120px;
+  margin: 20px;
+}
+.report-box_title{
+  font-size: 14px;
+  font-weight: 400;
+  color: #3E5A6E;
+}
+.report-box_number{
+  font-size: 20px;
+  font-weight: 700;
+  color: #3E5A6E;
+}
+.arrov-i{
+  font-size: 30px;
+  color: #00f700;
+  margin-left: 5px;
+}
+.arrov-i.arrow-f{
+  transform: rotate(180deg);
+  color: red;
+}
+.arrow-g{
+  color: #ffe600;
+}
+.arrow-r{
+  color: red;
+}
+.btn{
+  width: 100px;
+  padding: 8px 0;
+  font-size: 15px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  color: #2441c0;
+  border: 1px solid #bb4add;
+  cursor: pointer;
+}
+.money-report_diagram{
+  width: calc(100% - 420px);
+  height: 100%;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.pro-chart,
+.pro-chart_two {
+  position: relative;
+  width: 100%;
+  padding: 0 20px;
+}
+.pro-chart #myChart,
+.pro-chart #myChart_two{
+  width: 100%;
+  height: 100%;
+}
+/* End home */
+
+/* Start income table */
+.income-table{
+  width: 100%;
+  border-collapse: collapse;
+}
+.line-r{
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid rgba(211, 26, 244, 0.07);
+}
+.table-title{
+  width: calc(100% / 8);
+  font-weight: 400;
+  font-size: 14px;
+  text-align: left;
+  color: #3E5A6E;
+}
+.table-title:nth-child(1){
+  padding-left: 10px;
+}
+/* End income table */
+
+/* Start income money table */
+.chartBox {
+  width: 100%;
+  padding: 20px;
+  background: white;
+}
+/* End income money table */
+
+
+@media only screen and (max-width: 991px) {
+  .money-report_diagram .pro-chart.doughnut {
+    width: 100%;
+    max-height: 300px;
+    margin-top: 20px;
+    overflow-x: scroll;
+  }
+}
+.colpen{
+    padding-bottom: 40px;
+}
+.colpen li {
+  margin-right: 10px;
+}
+
+.fr{
+  margin: 20px 5px;
+}
+
+.select select{
+    padding: 8px;
+    border-radius: 5px;
+}
+.money-report {
+    padding: 0 50px;
+}

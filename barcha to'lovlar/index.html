@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Start css link -->
+  <link rel="stylesheet" href="style.css">
+  <!-- End css link -->
+
+  <!-- Start fontawesome icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- End fontawesome icon -->
+
+  <!-- Start cdn link start -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"
+    integrity="sha512-Wt1bJGtlnMtGP0dqNFH1xlkLBNpEodaiQ8ZN5JLA5wpc1sUlk/O5uuOMNgvzddzkpvZ9GLyYNa8w2s7rqiTk5Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- End cdn link end --> 
+    <title>Barcha to'lovlar</title>
+</head>
+<body>
+  <header class="header d-flex a-i-center j-c-center">
+    <div class="brand-logo d-flex a-i-center j-c-center">
+      <a href="" class="brand-logo__link">EduERP</a>
+    </div>
+    <div class="header-menu d-flex a-i-center j-c-beetwen">
+      <div class="burger-btn">
+        <i class="bi bi-list"></i>
+      </div>
+
+      <div class="header-title">
+        <h3>2 - sonli maktab</h3>
+      </div>
+
+      <div class="avatar d-flex a-i-center j-c-center">
+        <div class="notifation">
+          <i class="bi bi-bell-fill icon"></i>
+          <span class="notification-number"></span>
+        </div>
+        
+        <div class="user">  
+          <img src="../img/Без названия.png" alt="user">
+        </div>  
+      </div>  
+    </div>  
+  </header> 
+
+  <nav class="sidebar">
+    <ul class="menu-list">
+      <li class="menu-item">
+        <a href="../index.html" class="menu-item__link">
+          <i class="bi bi-house icon"></i>
+          Bosh sahifa
+        </a>
+      </li>
+      <li class="menu-item">
+        <button class="dropdoun-btn">
+          <i class="bi bi-bank icon"></i>
+          Moliya
+          <i class="bi bi-caret-right-fill arrow"></i>
+        </button>
+        <ul class="drop-list">
+          <li class="drop-item">
+            <a href="#" style="color: blue;" class="drop-item__link">
+              <i class="bi bi-credit-card-2-front icon"></i>
+              Barcha to'lovlar
+            </a>
+          </li>
+          <li class="drop-item">
+            <a href="#" class="drop-item__link">
+              <i class="bi bi-pie-chart icon"></i>
+             Xarajatlar
+            </a>
+          </li>
+          <li class="drop-item">
+            <a href="#" class="drop-item__link">
+              <i class="bi bi-coin icon"></i>
+              Kurs to'lovlari
+            </a>
+          </li>
+          <li class="drop-item">
+            <a href="#" class="drop-item__link">
+              <i class="bi bi-file-text icon"></i>
+              Ish haqi
+            </a>
+          </li>
+          <li class="drop-item">
+            <a href="../Qarizdorlar/index.html" class="drop-item__link">
+              <i class="bi bi-exclamation-triangle icon"></i>
+              Qarzdorlar
+            </a>
+          </li>
+          <li class="drop-item">
+            <a href="#" class="drop-item__link">
+              <i class="bi bi-coin icon"></i>              
+              Boshqa kirimlar
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="./index.html" class="menu-item__link">
+          <i class="bi bi-person-video3 icon"></i>
+          O'quv jarayoni
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="./index.html" class="menu-item__link">
+          <i class="bi bi-hospital icon"></i>
+          Sinflar
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="./index.html" class="menu-item__link">
+          <i class="bi bi-chat-left-text icon"></i>
+          Xabarlar
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <section class="home">
+
+    <div class="money-report mt-20" style="padding: 40px 30px;">
+      <div class="money-report_titile d-flex a-i-center j-c-beetwen">
+        <h4>Barcha to'lovlar</h4>
+      </div>
+      <ul class="d-flex colpen">
+        <li >
+          <label for="date">
+            Sanadan
+            <input type="date" class="inp-filter" placeholder="dd.mm.yyy">
+          </label>
+        </li>
+        <li>
+          <label for="date">
+            Sanagacha
+            <input type="date" class="inp-filter" placeholder="dd.mm.yyy">
+          </label>
+        </li>
+        <li class="select">
+          <label for="date">
+            To'lov turi
+            <select name="Tolov">
+              <option value="click">Kirim</option>
+              <option value="humo">Chiqim</option>
+            </select>
+          </label>
+        </li>
+        <li class="select">
+          <label for="date">
+            To'lov shakli
+            <select name="Tolov">
+              <option value="click">Naqd</option>
+              <option value="humo">Plastik</option>
+              <option value="visa">Pul ko'chirish</option>
+            </select>
+          </label>
+        </li>
+        <li>
+          <label for="date">
+            Kimdan
+            <input type="text" class="inp-filter">
+          </label>
+        </li>
+        <li>
+          <label for="date">
+            Kimga
+            <input type="text" class="inp-filter">
+          </label>
+        </li>
+
+       
+      </ul>
+      <ul class="d-flex">
+        <li>
+          <label for="izoh">
+            Izoh <br>
+            <input type="text" class="inp-filter">
+          </label>
+        </li>
+        <li class="fr">
+          <button class="filter-btn">Filter</button>
+        </li>
+      </ul>
+      <table class="income-table">
+        <tr class="line-r">
+          <th class="table-title">#</th>
+          <th class="table-title">To'lov turi</th>
+          <th class="table-title">To'lov miqdori</th>
+          <th class="table-title">Sana</th>
+          <th class="table-title">To'lov shakli</th>
+          <th class="table-title">Kimdan</th>
+          <th class="table-title">Kimga</th>
+          <th class="table-title">Izoh</th>
+        </tr>
+        <tr class="line-r">
+          <td class="table-title">1</td>
+          <td class="table-title">Kirim</td>
+          <td class="table-title">1 500 000</td>
+          <td class="table-title">2022-07-01</td>
+          <td class="table-title">Naqd</td>
+          <td class="table-title">O'quvchi</td>
+          <td class="table-title">O'qituvchi</td>
+          <td class="table-title">Oylik</td>
+          
+        </tr>
+        <tr class="line-r">
+          <td class="table-title">2</td>
+          <td class="table-title">Chiqim</td>
+          <td class="table-title">1 700 000</td>
+          <td class="table-title">2022-08-15</td>
+          <td class="table-title">Plastik</td>
+          <td class="table-title">O'quvchi</td>
+          <td class="table-title">O'qituvchi</td>
+          <td class="table-title">Oylik</td>
+        </tr>
+      </table>
+    </div>
+      
+    </section>
+    <script src="../js/script.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+</body>
+</html>
